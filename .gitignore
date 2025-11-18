@@ -1,0 +1,56 @@
+# ===========================
+# PYTHON CORE
+# ===========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# ===========================
+# VIRTUAL ENVIRONMENTS
+# ===========================
+# Virtualenv configurations
+venv/
+env/
+.venv/
+.env
+
+# ===========================
+# IDE & EDITORS
+# ===========================
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (PyCharm)
+.idea/
+*.iml
+
+# ===========================
+# OPERATING SYSTEMS
+# ===========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===========================
+# LOGS & DEBUG
+# ===========================
+*.log
+debug.txt
+
+# ===========================
+# MEDIA ARTIFACTS
+# ===========================
+# Ignore temporary screenshots saved during debugging
+# (Unless you have an 'assets' folder for UI images)
+*.jpg
+*.png
+*.avi
+*.mp4
+
+# Keep gitkeep files (if you use empty folders)
+!**.gitkeep
