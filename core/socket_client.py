@@ -1,5 +1,7 @@
 import asyncio
 import websockets
+import ssl
+import certifi
 from .video_capture import ScreenCapturer
 from .terminal_ui import TerminalUI
 from config import FPS_LIMIT
@@ -31,7 +33,10 @@ class StreamClient:
 
     async def start(self):
         self.ui.log_info(f"Connecting to {self.uri}...")
-        async with websockets.connect(self.uri) as websocket:
+
+        ssl_context = ssl.create_default_context(cafile=certifi.where())
+
+        async with websockets.connect(self.uri, ssl=ssl_context) as websocket:
             self.ui.log_info("Conection established. You are sharing your screen.")
 
             await asyncio.gather(
