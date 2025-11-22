@@ -1,8 +1,8 @@
 import asyncio
 import websockets
-from ..core.video_capture import ScreenCapturer
-from ..core.terminal_ui import TerminalUI
-from ..config import FPS_LIMIT
+from .video_capture import ScreenCapturer
+from .terminal_ui import TerminalUI
+from config import FPS_LIMIT
 
 
 class StreamClient:

@@ -1,9 +1,9 @@
 import asyncio
 import sys
 from config import SERVER_URL
-from network.socket_client import StreamClient
+from core.socket_client import StreamClient
 
-if __name__ == "__run__":
+if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: python run.py <chat_id>")
         sys.exit(1)

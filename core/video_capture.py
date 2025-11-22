@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from mss import mss
-from ..config import JPEG_QUALITY
+from config import JPEG_QUALITY
 
 
 class ScreenCapturer:
